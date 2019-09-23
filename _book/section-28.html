@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 文档编写 | 数据分析内功心法</title>
+  <title>Chapter 5 数据操作 | 数据分析内功心法</title>
   <meta name="description" content="本教程主要介绍数据分析中常用的方法和工具，特别是R语言常用的框架和基本操作。相关读者应将本书作为基础性介绍，而非一个完整的工具说明文档。读者如果对于相关介绍想进一步学习，需要查阅相关文档，github和Stack Overflow，或者其他有经验的人员。同时，教程中给出的一些论断，均基于当前的工作实践和R的开发状况，因此无法做到完全的与时俱进和全面认知，请读者发挥主观能动性，发现新的认知。" />
   <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 文档编写 | 数据分析内功心法" />
+  <meta property="og:title" content="Chapter 5 数据操作 | 数据分析内功心法" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 文档编写 | 数据分析内功心法" />
+  <meta name="twitter:title" content="Chapter 5 数据操作 | 数据分析内功心法" />
   
   <meta name="twitter:description" content="本教程主要介绍数据分析中常用的方法和工具，特别是R语言常用的框架和基本操作。相关读者应将本书作为基础性介绍，而非一个完整的工具说明文档。读者如果对于相关介绍想进一步学习，需要查阅相关文档，github和Stack Overflow，或者其他有经验的人员。同时，教程中给出的一些论断，均基于当前的工作实践和R的开发状况，因此无法做到完全的与时俱进和全面认知，请读者发挥主观能动性，发现新的认知。" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="section-25.html"/>
-<link rel="next" href="section-29.html"/>
+<link rel="prev" href="section-17.html"/>
+<link rel="next" href="section-33.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -138,42 +138,63 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#section-6"><i class="fa fa-check"></i><b>2.6</b> 函数</a></li>
 <li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#section-7"><i class="fa fa-check"></i><b>2.7</b> 基本语法</a></li>
 <li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#section-8"><i class="fa fa-check"></i><b>2.8</b> 绘图</a></li>
-<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#base"><i class="fa fa-check"></i><b>2.9</b> base库中的常用函数</a></li>
-<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#section-9"><i class="fa fa-check"></i><b>2.10</b> 统计运算</a></li>
-<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#section-10"><i class="fa fa-check"></i><b>2.11</b> 逻辑运算</a></li>
-<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#section-11"><i class="fa fa-check"></i><b>2.12</b> 字符串操作</a></li>
-<li class="chapter" data-level="2.13" data-path="intro.html"><a href="intro.html#section-12"><i class="fa fa-check"></i><b>2.13</b> 数据表操作</a></li>
-<li class="chapter" data-level="2.14" data-path="intro.html"><a href="intro.html#section-13"><i class="fa fa-check"></i><b>2.14</b> 绘图命令</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="section-14.html"><a href="section-14.html"><i class="fa fa-check"></i><b>3</b> 文件操作</a><ul>
-<li class="chapter" data-level="3.1" data-path="section-14.html"><a href="section-14.html#section-15"><i class="fa fa-check"></i><b>3.1</b> 表格文件</a></li>
-<li class="chapter" data-level="3.2" data-path="section-14.html"><a href="section-14.html#json"><i class="fa fa-check"></i><b>3.2</b> 序列化json</a></li>
-<li class="chapter" data-level="3.3" data-path="section-14.html"><a href="section-14.html#html"><i class="fa fa-check"></i><b>3.3</b> 爬虫html</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="section-16.html"><a href="section-16.html"><i class="fa fa-check"></i><b>4</b> 统计分析</a><ul>
-<li class="chapter" data-level="4.1" data-path="section-16.html"><a href="section-16.html#section-17"><i class="fa fa-check"></i><b>4.1</b> 描述性统计</a></li>
-<li class="chapter" data-level="4.2" data-path="section-16.html"><a href="section-16.html#section-18"><i class="fa fa-check"></i><b>4.2</b> 相关性分析</a></li>
-<li class="chapter" data-level="4.3" data-path="section-16.html"><a href="section-16.html#section-19"><i class="fa fa-check"></i><b>4.3</b> 假设检验</a></li>
-<li class="chapter" data-level="4.4" data-path="section-16.html"><a href="section-16.html#section-20"><i class="fa fa-check"></i><b>4.4</b> 主成分分析</a></li>
-<li class="chapter" data-level="4.5" data-path="section-16.html"><a href="section-16.html#section-21"><i class="fa fa-check"></i><b>4.5</b> 生存分析</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="section-22.html"><a href="section-22.html"><i class="fa fa-check"></i><b>5</b> 数据操作</a><ul>
-<li class="chapter" data-level="5.1" data-path="section-22.html"><a href="section-22.html#section-23"><i class="fa fa-check"></i><b>5.1</b> 特殊数据类型操作</a></li>
-<li class="chapter" data-level="5.2" data-path="section-22.html"><a href="section-22.html#section-24"><i class="fa fa-check"></i><b>5.2</b> 高效数据操作</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="section-25.html"><a href="section-25.html"><i class="fa fa-check"></i><b>6</b> 可视化</a><ul>
-<li class="chapter" data-level="6.1" data-path="section-25.html"><a href="section-25.html#section-26"><i class="fa fa-check"></i><b>6.1</b> 基本原则</a></li>
-<li class="chapter" data-level="6.2" data-path="section-25.html"><a href="section-25.html#section-27"><i class="fa fa-check"></i><b>6.2</b> 常用可视化包</a><ul>
-<li class="chapter" data-level="6.2.1" data-path="section-25.html"><a href="section-25.html#ggplot2"><i class="fa fa-check"></i><b>6.2.1</b> ggplot2</a></li>
-<li class="chapter" data-level="6.2.2" data-path="section-25.html"><a href="section-25.html#plotly"><i class="fa fa-check"></i><b>6.2.2</b> plotly</a></li>
-<li class="chapter" data-level="6.2.3" data-path="section-25.html"><a href="section-25.html#echats4r"><i class="fa fa-check"></i><b>6.2.3</b> echats4r</a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#base"><i class="fa fa-check"></i><b>2.9</b> base库中的常用函数</a><ul>
+<li class="chapter" data-level="2.9.1" data-path="intro.html"><a href="intro.html#section-9"><i class="fa fa-check"></i><b>2.9.1</b> 算数运算</a></li>
+<li class="chapter" data-level="2.9.2" data-path="intro.html"><a href="intro.html#section-10"><i class="fa fa-check"></i><b>2.9.2</b> 统计运算</a></li>
+<li class="chapter" data-level="2.9.3" data-path="intro.html"><a href="intro.html#section-11"><i class="fa fa-check"></i><b>2.9.3</b> 逻辑运算</a></li>
+<li class="chapter" data-level="2.9.4" data-path="intro.html"><a href="intro.html#section-12"><i class="fa fa-check"></i><b>2.9.4</b> 字符串操作</a></li>
+<li class="chapter" data-level="2.9.5" data-path="intro.html"><a href="intro.html#section-13"><i class="fa fa-check"></i><b>2.9.5</b> 数据表操作</a></li>
+<li class="chapter" data-level="2.9.6" data-path="intro.html"><a href="intro.html#section-14"><i class="fa fa-check"></i><b>2.9.6</b> 绘图命令</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="section-28.html"><a href="section-28.html"><i class="fa fa-check"></i><b>7</b> 文档编写</a><ul>
-<li class="chapter" data-level="7.1" data-path="section-28.html"><a href="section-28.html#markdown"><i class="fa fa-check"></i><b>7.1</b> markdown语言</a></li>
-<li class="chapter" data-level="7.2" data-path="section-28.html"><a href="section-28.html#rmarkdown"><i class="fa fa-check"></i><b>7.2</b> Rmarkdown</a></li>
+<li class="chapter" data-level="3" data-path="section-15.html"><a href="section-15.html"><i class="fa fa-check"></i><b>3</b> 文件操作</a><ul>
+<li class="chapter" data-level="3.1" data-path="section-15.html"><a href="section-15.html#section-16"><i class="fa fa-check"></i><b>3.1</b> 表格文件</a></li>
+<li class="chapter" data-level="3.2" data-path="section-15.html"><a href="section-15.html#json"><i class="fa fa-check"></i><b>3.2</b> 序列化json</a></li>
+<li class="chapter" data-level="3.3" data-path="section-15.html"><a href="section-15.html#html"><i class="fa fa-check"></i><b>3.3</b> 爬虫html</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="section-29.html"><a href="section-29.html"><i class="fa fa-check"></i><b>8</b> 速查表</a></li>
+<li class="chapter" data-level="4" data-path="section-17.html"><a href="section-17.html"><i class="fa fa-check"></i><b>4</b> 统计分析</a><ul>
+<li class="chapter" data-level="4.1" data-path="section-17.html"><a href="section-17.html#section-18"><i class="fa fa-check"></i><b>4.1</b> 描述性统计</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="section-17.html"><a href="section-17.html#section-19"><i class="fa fa-check"></i><b>4.1.1</b> 分位数</a></li>
+<li class="chapter" data-level="4.1.2" data-path="section-17.html"><a href="section-17.html#section-20"><i class="fa fa-check"></i><b>4.1.2</b> 频度</a></li>
+<li class="chapter" data-level="4.1.3" data-path="section-17.html"><a href="section-17.html#section-21"><i class="fa fa-check"></i><b>4.1.3</b> 置信度</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="section-17.html"><a href="section-17.html#section-22"><i class="fa fa-check"></i><b>4.2</b> 相关性分析</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="section-17.html"><a href="section-17.html#section-23"><i class="fa fa-check"></i><b>4.2.1</b> 相关系数</a></li>
+<li class="chapter" data-level="4.2.2" data-path="section-17.html"><a href="section-17.html#chi2"><i class="fa fa-check"></i><b>4.2.2</b> <span class="math inline">\(\chi^2\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="section-17.html"><a href="section-17.html#section-24"><i class="fa fa-check"></i><b>4.3</b> 假设检验</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="section-17.html"><a href="section-17.html#p"><i class="fa fa-check"></i><b>4.3.1</b> P值</a></li>
+<li class="chapter" data-level="4.3.2" data-path="section-17.html"><a href="section-17.html#section-25"><i class="fa fa-check"></i><b>4.3.2</b> 常用检验方法</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="section-17.html"><a href="section-17.html#section-26"><i class="fa fa-check"></i><b>4.4</b> 主成分分析</a></li>
+<li class="chapter" data-level="4.5" data-path="section-17.html"><a href="section-17.html#section-27"><i class="fa fa-check"></i><b>4.5</b> 生存分析</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="section-28.html"><a href="section-28.html"><i class="fa fa-check"></i><b>5</b> 数据操作</a><ul>
+<li class="chapter" data-level="5.1" data-path="section-28.html"><a href="section-28.html#section-29"><i class="fa fa-check"></i><b>5.1</b> 特殊数据类型操作</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="section-28.html"><a href="section-28.html#section-30"><i class="fa fa-check"></i><b>5.1.1</b> 字符</a></li>
+<li class="chapter" data-level="5.1.2" data-path="section-28.html"><a href="section-28.html#section-31"><i class="fa fa-check"></i><b>5.1.2</b> 日期/时间</a></li>
+<li class="chapter" data-level="5.1.3" data-path="section-28.html"><a href="section-28.html#json-1"><i class="fa fa-check"></i><b>5.1.3</b> json</a></li>
+<li class="chapter" data-level="5.1.4" data-path="section-28.html"><a href="section-28.html#xml"><i class="fa fa-check"></i><b>5.1.4</b> xml</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="section-28.html"><a href="section-28.html#section-32"><i class="fa fa-check"></i><b>5.2</b> 高效数据操作</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="section-28.html"><a href="section-28.html#data.table"><i class="fa fa-check"></i><b>5.2.1</b> data.table</a></li>
+<li class="chapter" data-level="5.2.2" data-path="section-28.html"><a href="section-28.html#plyrdplyr"><i class="fa fa-check"></i><b>5.2.2</b> plyr/dplyr</a></li>
+<li class="chapter" data-level="5.2.3" data-path="section-28.html"><a href="section-28.html#magrittr"><i class="fa fa-check"></i><b>5.2.3</b> magrittr</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="section-33.html"><a href="section-33.html"><i class="fa fa-check"></i><b>6</b> 可视化</a><ul>
+<li class="chapter" data-level="6.1" data-path="section-33.html"><a href="section-33.html#section-34"><i class="fa fa-check"></i><b>6.1</b> 基本原则</a></li>
+<li class="chapter" data-level="6.2" data-path="section-33.html"><a href="section-33.html#section-35"><i class="fa fa-check"></i><b>6.2</b> 常用可视化包</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="section-33.html"><a href="section-33.html#ggplot2"><i class="fa fa-check"></i><b>6.2.1</b> ggplot2</a></li>
+<li class="chapter" data-level="6.2.2" data-path="section-33.html"><a href="section-33.html#plotly"><i class="fa fa-check"></i><b>6.2.2</b> plotly</a></li>
+<li class="chapter" data-level="6.2.3" data-path="section-33.html"><a href="section-33.html#echats4r"><i class="fa fa-check"></i><b>6.2.3</b> echats4r</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="section-36.html"><a href="section-36.html"><i class="fa fa-check"></i><b>7</b> 文档编写</a><ul>
+<li class="chapter" data-level="7.1" data-path="section-36.html"><a href="section-36.html#markdown"><i class="fa fa-check"></i><b>7.1</b> markdown语言</a></li>
+<li class="chapter" data-level="7.2" data-path="section-36.html"><a href="section-36.html#rmarkdown"><i class="fa fa-check"></i><b>7.2</b> Rmarkdown</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="section-37.html"><a href="section-37.html"><i class="fa fa-check"></i><b>8</b> 速查表</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -195,13 +216,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="section-28" class="section level1">
-<h1><span class="header-section-number">Chapter 7</span> 文档编写</h1>
-<div id="markdown" class="section level2">
-<h2><span class="header-section-number">7.1</span> markdown语言</h2>
+<h1><span class="header-section-number">Chapter 5</span> 数据操作</h1>
+<div id="section-29" class="section level2">
+<h2><span class="header-section-number">5.1</span> 特殊数据类型操作</h2>
+<div id="section-30" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> 字符</h3>
 </div>
-<div id="rmarkdown" class="section level2">
-<h2><span class="header-section-number">7.2</span> Rmarkdown</h2>
+<div id="section-31" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> 日期/时间</h3>
+</div>
+<div id="json-1" class="section level3">
+<h3><span class="header-section-number">5.1.3</span> json</h3>
+</div>
+<div id="xml" class="section level3">
+<h3><span class="header-section-number">5.1.4</span> xml</h3>
+</div>
+</div>
+<div id="section-32" class="section level2">
+<h2><span class="header-section-number">5.2</span> 高效数据操作</h2>
+<div id="data.table" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> data.table</h3>
+</div>
+<div id="plyrdplyr" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> plyr/dplyr</h3>
+</div>
+<div id="magrittr" class="section level3">
+<h3><span class="header-section-number">5.2.3</span> magrittr</h3>
 
+</div>
 </div>
 </div>
             </section>
@@ -209,8 +251,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="section-25.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="section-29.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="section-17.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="section-33.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -247,7 +289,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["DataScience4MedicalUse.pdf", "DataScience4MedicalUse.epub"],
+"download": ["DataAnalysisTutorial.pdf", "DataAnalysisTutorial.epub"],
 "toc": {
 "collapse": "subsection"
 }
@@ -255,6 +297,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

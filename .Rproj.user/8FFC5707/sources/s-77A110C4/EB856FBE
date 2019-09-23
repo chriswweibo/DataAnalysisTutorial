@@ -5,13 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3384769742",
+    "hash" : "731363722",
     "id" : "EB856FBE",
-    "lastKnownWriteTime" : 1569221796,
-    "last_content_update" : 1569221796,
-    "path" : "D://DataScience4MedicalUse/_bookdown.yml",
+    "lastKnownWriteTime" : 1569228030,
+    "last_content_update" : 1569228030857,
+    "path" : "D:/DataAnalysisTutorial/_bookdown.yml",
     "project_path" : "_bookdown.yml",
     "properties" : {
+        "cursorPosition" : "0,36",
+        "scrollLine" : "0"
     },
     "read_only" : false,
     "read_only_alternatives" : [

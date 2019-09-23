@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1569228116354.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "425853802",
+    "id" : "23ED3208",
+    "lastKnownWriteTime" : 1569228276,
+    "last_content_update" : 1569228276390,
+    "path" : "D:/DataAnalysisTutorial/04-manipulate.Rmd",
+    "project_path" : "04-manipulate.Rmd",
+    "properties" : {
+        "cursorPosition" : "18,12",
+        "scrollLine" : "4"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
