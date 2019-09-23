@@ -1,0 +1,5 @@
+# 速查表
+
+![](figures/cheatsheet1.png)
+
+![](figures/cheatsheet2.png)

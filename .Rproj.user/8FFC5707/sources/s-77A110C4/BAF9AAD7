@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1569224723070.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "BAF9AAD7",
+    "lastKnownWriteTime" : 1569224780,
+    "last_content_update" : 1569224780130,
+    "path" : "D:/DataAnalysisTutorial/03-desc.Rmd",
+    "project_path" : "03-desc.Rmd",
+    "properties" : {
+        "cursorPosition" : "10,7",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
