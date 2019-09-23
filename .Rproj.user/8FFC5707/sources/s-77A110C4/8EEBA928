@@ -5,13 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3827210878",
+    "hash" : "0",
     "id" : "8EEBA928",
     "lastKnownWriteTime" : 1569224874,
     "last_content_update" : 1569224874,
     "path" : "D:/DataAnalysisTutorial/packages.bib",
     "project_path" : "packages.bib",
     "properties" : {
+        "cursorPosition" : "11,16",
+        "scrollLine" : "0"
     },
     "read_only" : false,
     "read_only_alternatives" : [
