@@ -80,6 +80,9 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\usepackage[normalem]{ulem}
+% avoid problems with \sout in headers with hyperref:
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
 \IfFileExists{parskip.sty}{%
 \usepackage{parskip}
 }{% else
@@ -124,7 +127,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2019-09-23}
+    \date{2019-09-24}
 
 \usepackage{booktabs}
 
@@ -150,8 +153,21 @@
   一些信息来自于网络，作为内部教程不再单独说明。
 \end{itemize}
 
+教程结构如下：
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  介绍相关概念，信息可能来源于教材，博客，百科，学术文献等。建议著名出处。
+\item
+  实战经验分享，周边注意事项。尽可能的给出方法在实际使用中的各种问题和建议。
+\item
+  R相关包的按照和基本函数操作，以及输出结果。
+\end{enumerate}
+
 \hypertarget{intro}{%
-\chapter{R环境介绍}\label{intro}}
+\chapter{R环境介绍（张茜）}\label{intro}}
 
 \hypertarget{section-1}{%
 \section{相关历史}\label{section-1}}
@@ -473,7 +489,7 @@ conda install -c r r-essentials
 
 \begin{verbatim}
 ##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-## -2.518890 -0.486208  0.191744  0.008009  0.783987  1.628505
+## -2.847280 -0.586939  0.006539  0.098599  0.883060  4.062509
 \end{verbatim}
 
 \hypertarget{section-11}{%
@@ -554,7 +570,7 @@ conda install -c r r-essentials
 \includegraphics{DataAnalysisTutorial_files/figure-latex/unnamed-chunk-22-1.pdf}
 
 \hypertarget{section-15}{%
-\chapter{文件操作}\label{section-15}}
+\chapter{文件操作（张武健）}\label{section-15}}
 
 \hypertarget{section-16}{%
 \section{表格文件}\label{section-16}}
@@ -568,7 +584,7 @@ conda install -c r r-essentials
 Here is a review of existing methods.
 
 \hypertarget{section-17}{%
-\chapter{统计分析}\label{section-17}}
+\chapter{统计分析（马素芬）}\label{section-17}}
 
 \hypertarget{section-18}{%
 \section{描述性统计}\label{section-18}}
@@ -607,7 +623,7 @@ Here is a review of existing methods.
 \section{生存分析}\label{section-27}}
 
 \hypertarget{section-28}{%
-\chapter{数据操作}\label{section-28}}
+\chapter{数据操作（魏博）}\label{section-28}}
 
 \hypertarget{section-29}{%
 \section{特殊数据类型操作}\label{section-29}}
@@ -637,7 +653,7 @@ Here is a review of existing methods.
 \subsection{magrittr}\label{magrittr}}
 
 \hypertarget{section-33}{%
-\chapter{可视化}\label{section-33}}
+\chapter{可视化（张武健）}\label{section-33}}
 
 \hypertarget{section-34}{%
 \section{基本原则}\label{section-34}}
@@ -655,16 +671,150 @@ Here is a review of existing methods.
 \subsection{echats4r}\label{echats4r}}
 
 \hypertarget{section-36}{%
-\chapter{文档编写}\label{section-36}}
+\chapter{文档编写（魏博）}\label{section-36}}
 
 \hypertarget{markdown}{%
 \section{markdown语言}\label{markdown}}
 
+插入目录
+
+{[}TOC{]}
+
+\hypertarget{section-37}{%
+\subsection{三级标题}\label{section-37}}
+
+\hypertarget{section-38}{%
+\subsubsection{四级标题}\label{section-38}}
+
+\hypertarget{section-39}{%
+\paragraph{五级标题}\label{section-39}}
+
+\hypertarget{section-40}{%
+\subsection{段落引用}\label{section-40}}
+
+\begin{quote}
+段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用段落引用
+\end{quote}
+
+\hypertarget{section-41}{%
+\subsection{列表}\label{section-41}}
+
+\begin{itemize}
+\tightlist
+\item
+  无序列表
+\item
+  无序列表
+\item
+  无序列表
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  有序列表
+\item
+  有序列表
+\item
+  嵌套列表
+  3.1 嵌套列表
+  3.2 嵌套列表
+\item
+  有序列表
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  未完成列表
+\item[$\boxtimes$]
+  未完成列表
+\end{itemize}
+
+\hypertarget{section-42}{%
+\subsection{插入内容}\label{section-42}}
+
+行内公式\(1+2+ \dots+100\)
+
+行间公式
+
+\[1+2+ \dots+100\]
+
+插入图片
+
+\hypertarget{section-43}{%
+\subsection{文本变化}\label{section-43}}
+
+==sd==
+
+\textbf{重体}，\emph{斜体}，==高亮==，\sout{删除线的内容}, \href{www.genowis.con}{超链接}, 下划线.
+
+我是\textsuperscript{上标}， 我是\textsubscript{下标}，我是\footnote{sdfedf}
+
+\hypertarget{section-44}{%
+\subsection{表格}\label{section-44}}
+
+\begin{longtable}[]{@{}lrc@{}}
+\toprule
+项目 & 价格 & 数量\tabularnewline
+\midrule
+\endhead
+计算机 & \$1600 & 5\tabularnewline
+手机 & \$12 & 12\tabularnewline
+管线 & \$1 & 234\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{section-45}{%
+\subsection{工程图}\label{section-45}}
+
+\begin{verbatim}
+graph LR
+A[Hard edge] -->B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+\end{verbatim}
+
+\hypertarget{section-46}{%
+\subsection{代码块}\label{section-46}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\AttributeTok{@requires_authorization}
+\KeywordTok{class}\NormalTok{ SomeClass:}
+    \ControlFlowTok{pass}
+
+\ControlFlowTok{if} \VariableTok{__name__} \OperatorTok{==} \StringTok{'__main__'}\NormalTok{:}
+    \CommentTok{# A comment}
+    \BuiltInTok{print} \StringTok{'hello world'}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{section-47}{%
+\subsection{分割线}\label{section-47}}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\hypertarget{emoji}{%
+\subsection{emoji(建议在关闭源代码模式下，使用自动提示)}\label{emoji}}
+
+:smile:
+:cry:
+:angry:
+:coffee:
+:computer:
+:calendar:
+:email:
+:kiss:
+:key:
+
 \hypertarget{rmarkdown}{%
 \section{Rmarkdown}\label{rmarkdown}}
 
-\hypertarget{section-37}{%
-\chapter{速查表}\label{section-37}}
+\hypertarget{section-48}{%
+\chapter{速查表}\label{section-48}}
 
 \includegraphics{figures/cheatsheet1.png}
 
