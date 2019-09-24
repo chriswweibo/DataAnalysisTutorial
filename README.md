@@ -1,1 +1,1 @@
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "Get Started" at https://bookdown.org/ for how to compile this example.
+本教程主要介绍数据分析中常用的方法和工具，特别是R语言常用的框架和基本操作。相关读者应将本书作为基础性介绍，而非一个完整的工具说明文档。读者如果对于相关介绍想进一步学习，需要查阅相关文档，github和Stack Overflow，或者其他有经验的人员。同时，教程中给出的一些论断，均基于当前的工作实践和R的开发状况，因此无法做到完全的与时俱进和全面认知，请读者发挥主观能动性，发现新的认知。
