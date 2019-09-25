@@ -30,6 +30,58 @@ data_csv
 
 ## 序列化json
 
+###**json简介**
+JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。 易于人阅读和编写。同时也易于机器解析和生成。 它基于JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999的一个子集。 JSON采用完全独立于语言的文本格式，但是也使用了类似于C语言家族的习惯（包括C, C++, C#, Java, JavaScript, Perl, Python等）。 这些特性使JSON成为理想的数据交换语言。
+
+JSON建构于两种结构： 
+
+（1）“名称/值”对的集合（A collection of name/value pairs）。不同的语言中，它被理解为对象（object），纪录（record），结构（struct），字典（dictionary），哈希表（hash table），有键列表（keyed list），或者关联数组 （associative array）。
+
+（2）值的有序列表（An ordered list of values）。在大部分语言中，它被理解为数组（array）。
+
+
+JSON具有以下这些形式：
+
+**1.对象**
+
+对象是一个无序的“‘名称/值’对”集合。一个对象以“{”（左括号）开始，“}”（右括号）结束。每个“名称”后跟一个“:”（冒号）；“‘名称/值’ 对”之间使用“,”（逗号）分隔。
+
+![](https://images2018.cnblogs.com/blog/1237656/201802/1237656-20180228144231086-1858725689.png)
+
+**2.数组**
+数组是值（value）的有序集合。一个数组以“[”（左中括号）开始，“]”（右中括号）结束。值之间使用“,”（逗号）分隔。
+
+![](https://images2018.cnblogs.com/blog/1237656/201802/1237656-20180228144235825-149005314.png)
+
+值（value）可以是双引号括起来的字符串（string）、数值(number)、true、false、 null、对象（object）或者数组（array）。这些结构可以嵌套。
+
+![](https://images2018.cnblogs.com/blog/1237656/201802/1237656-20180228144244413-988924968.png)
+
+###**json**实例
+####**创建json并转成Data Frame**
+
+```{r}
+library(jsonlite)
+
+json <-
+'[
+  {"Name" : "Jack", "Age" : 11, "Nationality" : "Brazil"}, 
+  {"Name" : "Queen", "Age" : 12, "Nationality" : "Portugal"},
+  {},
+  {"Name" : "King", "Nationality" : "Argentina"}
+]'
+
+mydf <- fromJSON(json) #使用fromJSON函数转成Data Frame格式
+mydf
+```
+####**将Data Frame转成Json**
+
+```{r}
+mydf$Ranking = c(3, 2, 4, 1)
+new_json = toJSON(mydf, pretty=TRUE) # pretty 参数能添加一些空格和换行符是的输出的json更美观
+new_json
+```
+
 ## 爬虫html
 
 Here is a review of existing methods.
