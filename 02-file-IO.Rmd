@@ -2,6 +2,32 @@
 test
 ## 表格文件
 
+###**创建并写入文件**
+```{r}
+names = c("Jack", "Queen", "King")
+ages = c(11, 12, 13)
+sample = data.frame(names, ages, stringsAsFactors=FALSE )
+sample
+
+write.table(x = sample, file = "C:/Users/Administrator/Desktop/example1.txt", sep = "\t", row.names = TRUE, col.names = TRUE) #存储为txt文件
+write.csv(x = sample, file = "C:/Users/Administrator/Desktop/example1.csv", col.names = TRUE) #存储为csv文件（逗号分隔符）
+```
+参数说明：
+
+* **x** 是准备输出的存储变量(文件)
+* **file** 是包含文件名的文件路径
+* **sep** 是指定的分隔符
+* **row.names** 是选择是否输出行名
+* **col.names** 是选择是否输出列名
+
+###**读取文件**
+```{r}
+data_txt = read.table("C:/Users/Administrator/Desktop/example1.txt", header=TRUE, sep="\t")
+data_txt
+data_csv = read.csv(file = "C:/Users/Administrator/Desktop/example1.csv")
+data_csv
+```
+
 ## 序列化json
 
 ## 爬虫html
