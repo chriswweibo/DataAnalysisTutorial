@@ -77,7 +77,7 @@ mydf
 ####**将Data Frame转成Json**
 
 ```{r}
-mydf$Ranking = c(3, 2, 4, 1)
+mydf$Ranking = c(3, 2, 4, 1) #增加一列 "Ranking" 信息
 new_json = toJSON(mydf, pretty=TRUE) # pretty 参数能添加一些空格和换行符是的输出的json更美观
 new_json
 ```
