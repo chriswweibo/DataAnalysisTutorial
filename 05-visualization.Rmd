@@ -47,6 +47,9 @@
 
 热图显示两个项目之间的关系，并提供评级信息，例如从高到低或从差到优。等级信息通常使用不同的颜色或饱和度来显示。
 
+Reference:
+https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization
+
 ## 常用可视化包
 
 
