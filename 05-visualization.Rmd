@@ -1,6 +1,51 @@
-# 可视化（张武健）
+﻿# 可视化（张武健）
 
-## 基本原则
+##** 基本原则**
+
+###**常见可视化图形选择**
+
+####**(1)柱形图(Column Chart)**
+![](https://blog.hubspot.com/hs-fs/hubfs/Agency_Post/Blog_Images/DataHero_Customers_by_Close_Date.png?width=669&name=DataHero_Customers_by_Close_Date.png)
+
+
+柱形图利用柱子的高度，能够比较清晰的反映数据的差异，一般情况下用来反映分类项目之间的比较，也可以用来反映时间趋势。
+
+注意：柱形图的局限在于它仅适用于中小规模的数据集，当数据较多时就不易分辨。一般而言，不要超过10个。
+
+通常来说，柱形图的横轴是时间维度，用户习惯性认为存在时间趋势。如果遇到横轴不是时间维度的情况，建议用颜色区分每根柱子。
+
+####**(2)条形图(Bar Graph)**
+![](https://blog.hubspot.com/hs-fs/hubfs/Agency_Post/Blog_Images/DataHero_Customers_by_Role.png?width=669&name=DataHero_Customers_by_Role.png)
+
+条形图用来反映分类项目之间的比较，适合应用于跨类别比较数据。在我们需要比较项类的大小、高低时适合使用条形图。
+
+####**(3)线形图(Line Graph)**
+![](https://blog.hubspot.com/hs-fs/hubfs/Agency_Post/Blog_Images/DataHero_Average_Days_to_Close_by_Date_Became_SQL.png?width=669&name=DataHero_Average_Days_to_Close_by_Date_Became_SQL.png)
+
+折线图用来反映随时间变化的趋势。当我们需要描述事物随时间维度的变化时常常需要使用该图形。
+
+####**(4)饼图(Pie Chart)**
+![](https://blog.hubspot.com/hs-fs/hubfs/Agency_Post/Blog_Images/DataHero_Customers_by_Role_in_Company.png?width=669&name=DataHero_Customers_by_Role_in_Company.png)
+
+饼图显示一个静态数字，以及不同类别所占整体的一部分（某物的组成）。 饼图以百分比表示数字，所有细分的总和必须等于100％。
+
+####**(5)散点图(Scatter Chart)**
+![](https://blog.hubspot.com/hs-fs/hubfs/Agency_Post/Blog_Images/scatter-plot-customer-happines.png?width=669&name=scatter-plot-customer-happines.png)
+
+
+散点图的数据为三维数据，使用两组数据构成多个坐标点，分析坐标点的分布情况，判断两个变量之间的关联或分布趋势。
+
+可以用颜色区分系列，也可以用散点大小定第三维度，这就衍生图出了气泡图。
+
+####**(6)气泡图(Bubble Chart)**
+![](https://blog.hubspot.com/hs-fs/hubfs/Agency_Post/Blog_Images/bubble-chart.png?width=669&name=bubble-chart.png)
+
+气泡图是散点图的一种衍生，通过每个点的面积大小来衡量第三维度，适合三维数据的对比，且需要强调第三维。
+
+####**(7)热图(Heat Map)**
+![](https://blog.hubspot.com/hs-fs/hubfs/Agency_Post/Blog_Images/heat-map-chart.png?width=669&name=heat-map-chart.png)
+
+热图显示两个项目之间的关系，并提供评级信息，例如从高到低或从差到优。等级信息通常使用不同的颜色或饱和度来显示。
 
 ## 常用可视化包
 
